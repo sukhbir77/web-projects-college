@@ -1,0 +1,101 @@
+<!doctype html>
+
+<!- Name : Sukhbir Singh -->
+<!- Student Number : 991545757 -->
+
+	<head>
+		<title>SUKHBIR SINGH</title>
+	</head>
+	
+<link rel="stylesheet" type="text/css" href="css\style.css">
+
+<body bgcolor="grey">
+
+	<div class="parent_personal_page">
+	
+		<div class="assignment"> 
+			ASSIGNMENT #4/ SUKHBIR SINGH / 991545757
+		</div>
+	
+		<div class="name">
+			<form name="personal_info" action="" method="post">
+			
+				<label>Last Name :</label> <input type="text" value="Singh" name="last_name"><br><br>
+			
+				<label>First Name :</label> <input type="text" value="Sukhbir" name="first_name"><br><br>
+			
+				<label>Student Number :</label> <input type="number" value="991545757" name="student_number"><br><br>
+			
+				<label>Sheridan Email :</label> <input type="email" value="Sing9014@sheridan.ca" name="sheridan_email"><br>
+				
+			<br>
+		</div>
+		
+	<div class="experience">
+			
+			
+				<label>Date :</label> 
+				
+					<input type="date" value="2019-01-07"><br><br>
+				
+				<label>Previous Experiencep : </label>
+					
+					<input type="number" value="0" name="experience"><br><br>
+			
+				<label>Campus :</label> 
+				
+				<select name="campus">
+					<option>Davis</option>
+					<option>Trafalgr</option>
+					<option>HMC</option>
+				</select><br>
+				
+			
+		</div>
+		
+		<div class="finance">
+			<label>Money Received :</label>
+				
+				<input type="number" max="50000" min="8000"><br><br>
+				
+			<label>Money Source :</label><br>
+				
+				<input type="checkbox" name="scholarship" multiple>Scholarship
+				<input type="checkbox" name="loan" multiple>Loan
+				<input type="checkbox" name="RESP" multiple>RESP
+				<input type="checkbox" name="OESP" multiple>OESP
+				<input type="checkbox" name="none" >Family
+				
+				
+				
+					
+				</select>
+		</div>
+		
+		<div class="comment">
+		
+			<label>Comment :</label>
+			<br>
+				<textarea class="text_area" >Write Something.....</textarea>
+				<br><br>
+		</div>
+		
+		<div class="buttons">
+		
+			<input type="submit" value="Submit" onclick="display()">
+			<input type="reset">
+		
+		</form>
+		</div>
+	</div>
+	<script>
+		function display()
+		{
+			var x=document.forms.personal_info.first_name.value;
+			var y=document.forms.personal_info.last_name.value;
+			var z=document.forms.personal_info.student_number.value;
+			alert(x+" "+y+"/"+z);
+		}
+	</script>	
+</body>
+</html>

@@ -1,0 +1,74 @@
+
+.parent_personal_page
+{
+	display:grid;
+	width:100%;
+	height:100%;
+	grid-template-areas:"assignment assignment"
+	                    "name experience"
+						"finance comment"
+						"buttons buttons";
+}
+
+label
+{
+	width:300px;
+	display:inline-block;
+	text-align:left;
+}
+
+.assignment
+{
+	border:1px solid black;
+	grid-area:assignment;
+	text-align:center;
+	color:white;
+	padding:3.5px;
+	font-size:30px;
+}
+
+.name
+{
+	grid-area:name;
+	color:white;
+	padding:3.5px;
+	font-size:20px;
+}
+
+.experience
+{
+	grid-area:experience;
+	color:white;
+	padding:3.5px;
+	font-size:20px;
+}
+
+.finance
+{
+	grid-area:finance;
+	color:white;
+	padding:3.5px;
+	font-size:20px;
+}
+
+.comment 
+{
+	grid-area:comment;
+	color:white;
+	padding:3.5px;
+	font-size:20px;
+}
+
+.buttons 
+{
+	grid-area:buttons;
+	color:white;
+	padding:3.5px;
+	font-size:20px;
+}
+
+.text_area
+{
+	height:100px;
+	width:400px;
+}

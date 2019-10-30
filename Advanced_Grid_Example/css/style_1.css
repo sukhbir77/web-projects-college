@@ -1,0 +1,119 @@
+<!- Name : Sukhbir Singh -->
+<!- Student Number : 991545757 -->
+
+body
+{
+		background-size:cover;
+		background-repeat:no-repeat;
+}
+
+.parent_personal_page
+{
+	display:grid;
+	width:540px;
+	height:265px;
+	grid-template-areas:"name photo "
+	                    "student_nb photo"
+				        "campus photo"
+						"birth photo"
+						"animal photo"
+						"main_page main_page";
+	margin-top:200px;
+	margin-left:475px;
+}
+
+.name
+{
+	border-radius:10px;
+	grid-area:name;
+	background:rgb(208, 216, 245,0.3);
+	text-align:left;
+	color:white;
+	padding:3.5px;
+	font-size:20px;
+}
+
+.photo
+{
+	border-radius:10px;
+	grid-area:photo;
+	padding:20px;
+}
+
+img
+{
+	height:240px;
+	width:250px;
+	border-radius:10px;
+}
+.student_nb
+{
+	background:rgba(255,255,255,0.3);
+	border-radius:10px;
+	grid-area:student_nb;
+	text-align:left;
+	padding:5px;
+	color:white;
+	font-size:20px;
+}
+
+.campus
+{
+	background:rgb(208, 216, 245,0.3);
+	border-radius:10px;
+	grid-area:campus;
+	text-align:left;
+	padding:5px;
+	color:white;
+	font-size:20px;
+}
+
+.birth_country
+{
+	background:rgba(255,255,255,0.3);
+	border-radius:10px;
+	grid-area:birth;
+	text-align:left;
+	padding:5px;
+	color:white;
+	font-size:20px;
+}
+
+.animal
+{
+	background:rgb(208, 216, 245,0.3);
+	border-radius:10px;
+	grid-area:animal;
+	text-align:left;
+	padding:5px;
+	color:white;
+	font-size:20px;
+}
+
+.link_main_page
+{
+	background:rgba(255,255,255,.3);
+	border-radius:10px;
+	grid-area:main_page;
+	text-align:center;
+	padding:5px;
+	color:white;
+	font-size:20px;
+}
+
+a
+{
+	text-decoration:none;
+	color:white;
+}
+
+a:hover
+{
+	color:red;
+}
+
+
+
+
+
+

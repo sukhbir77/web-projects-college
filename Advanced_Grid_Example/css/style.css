@@ -1,0 +1,137 @@
+/* Name : Sukhbir Singh */
+/* Student Number : 991545757 */
+
+body
+{
+	background:url("../images/background.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	
+}
+
+.parent
+{
+	display:grid;
+	width:100%;
+	height:100%;
+	grid-template-areas:"header header "
+	                    "movie_1 movie_2"
+				        "footer footer";
+}
+
+.header
+{
+	grid-area:header;
+	border:3px solid black;
+	border-radius:10px;
+	background:rgba(0,0,150,0.2);
+	padding:15px;
+	text-align:center;
+}
+
+.name
+{
+	font-size:50px;	
+	color:white;
+}
+
+a
+{
+	text-decoration:none;
+	color:white;
+}
+
+a:hover
+{
+	color:red;
+}
+
+.movie_1
+{
+	grid-area:movie_1;
+	border:3px solid black;
+	border-radius:10px;
+	background:rgba(0,0,150,0.2);
+	padding:20px;
+	color:white;
+}
+
+img
+{
+	height:400px;
+	width:300px;
+}
+
+.movie_2
+{
+	grid-area:movie_2;
+	border:3px solid black;
+	border-radius:10px;
+	background:rgba(0,0,150,0.2);
+	padding:20px;
+	color:white;
+}
+.image_position
+{
+	text-align:center;
+	font-size:23px;
+}
+
+.flex_parent
+{
+	display:flex;
+	flex-wrap:wrap;
+	padding:35px;
+}
+
+.actor_1
+{
+	text-align:center;
+	font-size:13px;
+	padding:15px;
+	font-style:italic;
+}
+.actor_2
+{
+	text-align:center;
+	font-size:13px;
+	padding:15px;
+	font-style:italic;
+}
+
+.actor_3
+{
+	text-align:center;
+	font-size:13px;
+	padding:15px;
+	font-style:italic;
+}
+
+.actor_4
+{
+	text-align:center;
+	font-size:13px;
+	padding:15px;
+	font-style:italic;
+}
+
+.actors_image
+{
+	height:125px;
+	width:125px;
+}
+
+.footer
+{
+	grid-area:footer;
+	border:3px solid black;
+	border-radius:10px;
+	background:rgba(0,0,150,0.2);
+	text-align:center;
+}
+
+.links
+{
+	font-size:50px;	
+	color:white;
+}
