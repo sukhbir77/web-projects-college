@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Assignment 2 for Sukhbir Singh</title>
+        <style>
+            h1{
+                text-align: center;
+            }
+            body
+            {
+                background-image: url("image-1.jpg");
+                background-size: cover;
+            }
+            hr
+            {
+                height:3px;
+                background: black;
+                border-radius: 10px;
+            }
+            p
+            {
+                text-align: center;
+            }
+            .textbox
+            {
+                width:150px;
+                border:1px solid black;
+                border-radius: 10px;
+            }
+            .button
+            {
+                box-shadow: 5px 5px 5px black;
+                border-radius: 5px;
+            }
+            #result
+            {
+                font-size: 30px;
+                text-align: center;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>
+            Assignment 2<br>
+            Sukhbir Singh Instructor :<br>
+            Maninder Kaur Tatla
+        </h1>
+        <hr>
+        <form name="form1" action="" method="post">
+            <p>
+                <input type="number" id="input" class="textbox" placeholder="    Enter the Value Here"><br><br>
+                <input type="button" value="Celsius to Fahrenheit" onclick="c_f();" class="button">
+                <input type="button" value="Feet to Meters" onclick="f_m();" class="button">
+                <input type="button" value="Inches to Centimeters" onclick="i_c();" class="button">
+                <input type="button" value="Pounds to Kilogram" onclick="p_k();" class="button"><br><br>
+                <input type="button" value="Fahrenheit to Celsius" onclick="f_c();" class="button">
+                <input type="button" value="Meters to Feet" onclick="m_f();" class="button">
+                <input type="button" value="Centimeters to Inches" onclick="c_i();" class="button">
+                <input type="button" value="Kilogram to Pounds" onclick="k_p();" class="button"><br><br>
+                <input type="reset" value="Reset" onmouseup="reset_button();
+                        "  class="button"><br>
+            <p id="result"></p>
+
+        </p>
+
+    </form>
+
+</body>
+<script src="scripts/java.js">
+</script>
+</html>

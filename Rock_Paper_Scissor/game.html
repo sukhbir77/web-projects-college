@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <style>
+            .button{
+                height:35px;
+                border-radius:50px;
+                width:110px;
+
+            }
+        </style>
+
+    <body>
+        <a href="index.html"><input class="button" type="button"  value="exit"></a>
+        <script>
+            var user_points = 0;
+            var comp_points = 0;
+            var user;
+            var comp;
+            do
+            {
+                while (true) {
+                    var user_choice = prompt("Press 1 for Rock.\nPress 2 for Scissor.\nPress 3 for Paper.");
+                    if (user_choice == parseInt(1))
+                    {
+                        user = "Rock";
+                        break;
+                    }
+
+                    else if (user_choice == parseInt(2))
+                    {
+                        user = "Scissor";
+                        break;
+                    }
+                    else if (user_choice == parseInt(3))
+                    {
+                        user = "Paper";
+                        break;
+                    }
+                    else
+                    {
+                        alert("Please Enter a Valid Choice ");
+                    }
+                }
+                var comp_choice = Math.floor(Math.random() * 2) + 1;
+                if (comp_choice == parseInt(1))
+                {
+                    comp = "Rock";
+                    alert("Computer Picked :" + comp_choice);
+                }
+                else if (comp_choice == parseInt(2))
+                {
+                    comp = "Scissor";
+                    alert("Computer Picked :" + comp_choice);
+                }
+                else if (user_choice == parseInt(3))
+                {
+                    comp = "Paper";
+                    alert("Computer Picked :" + comp_choice);
+                }
+                else
+                {
+                    alert("Please Enter a Valid Choice ");
+                }
+                if (user == comp) {
+                    comp_points += 1;
+                    user_points += 1;
+                    alert("You Picked " + user + "\nComputer Picked " + comp + "\nIts a Tie \nYour Points " + user_points + "\nComputer Points " + comp_points);
+                }
+
+                else if (user == "Rock" && comp == "Scissor") {
+                    user_points += 1;
+                    alert("You Picked " + user + "\nComputer Picked " + comp + "\nYou Won \nYour Points " + user_points + "\nComputer Points " + comp_points);
+                }
+                else if (user == "Rock" && comp == "Paper") {
+                    comp_points += 1;
+                    alert("You Picked " + user + "\nComputer Picked " + comp + "\nComputer Won \nYour Points " + user_points + "\nComputer Points " + comp_points);
+                }
+                else if (user == "Paper" && comp == "Scissor") {
+                    comp_points += 1;
+                    alert("You Picked " + user + "\nComputer Picked " + comp + "\nComputer Won \nYour Points " + user_points + "\nComputer Points " + comp_points);
+                }
+                else if (user == "Paper" && comp == "Rock") {
+                    user_points += 1;
+                    alert("You Picked " + user + "\nComputer Picked " + comp + "\nYou Won \nYour Points " + user_points + "\nComputer Points " + comp_points);
+                }
+                else if (user == "Scissor" && comp == "Rock") {
+                    comp_points += 1;
+                    alert("You Picked " + user + "\nComputer Picked " + comp + "\nComputer Won \nYour Points " + user_points + "\nComputer Points " + comp_points);
+                }
+                else if (user == "Scissor" && comp == "Paper") {
+                    user_points += 1;
+                    alert("You Picked " + user + "\nComputer Picked " + comp + "\nYou Won \nYour Points " + user_points + "\nComputer Points " + comp_points);
+                }
+            }
+            while (confirm("Do you want to continue"));
+            var user = user_points;
+            var comp = comp_points;
+
+            if (user > comp)
+            {
+                alert("Your Points " + user_points + "\nComputer Points " + comp_points + "\nYou won!!!!!");
+            }
+            else if (user < comp) {
+                alert("Your Points " + user_points + "\nComputer Points " + comp_points + "\nComputer won!!!!!");
+            }
+            else {
+                alert("Your Points " + user_points + "\nComputer Points " + comp_points + "\nIts a Tie!!!!!");
+            }
+        </script>
+    </body>
+</html>
