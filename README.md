@@ -37,4 +37,4 @@ Explore a variety of web development projects created as part of my college curr
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/sukhbir77/Web-Projects.git
+   git clone https://github.com/sukhbir77/web-projects-college.git
